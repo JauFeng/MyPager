@@ -1,0 +1,432 @@
+@(title: String)(implicit messages: Messages, requestHeader: RequestHeader)
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+
+        <title>@title</title>
+        <meta name="description" content="Find answers to some frequently asked questions. If we haven’t answered your question below, please reach out and we’ll get back to you quickly!"/>
+        <meta name="keywords" content="pager faq, frequently asked questions, pager contact information, pager phone number"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="language" content="en-us" />
+        <link rel="canonical" href="https://pager.com/faq-support" />
+        <link rel="publisher" href="https://plus.google.com/101236825855071197223/about?hl=en"/>
+
+            <!---// Open Graph Tags -->
+        <meta property="og:title" content="Frequently Asked Questions and Contact information"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://pager.com/img/pager-homepage-fb-og-1200x1200.jpg"/>
+        <meta property="og:image:type" content="image/jpg"/>
+        <meta property="og:url" content="https://pager.com/faq-support"/>
+        <meta property="og:site_name" content="Pager" />
+        <meta property="og:description" content="Find answers to some frequently asked questions. If we haven’t answered your question below, please reach out and we’ll get back to you quickly!"/>
+        <meta property="og:locale" content="en_US" />
+        <meta property="fb:admins" content="621670044567977"/>
+
+            <!---// Twitter Cards -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:url" content="https://pager.com/faq-support"/>
+        <meta name="twitter:title" content="Frequently Asked Questions and Contact information"/>
+        <meta name="twitter:description" content="Find answers to some frequently asked questions. If we haven’t answered your question below, please reach out and we’ll get back to you quickly!"/>
+        <meta name="twitter:image" content="https://pager.com/img/pager-homepage-tw-750x560.jpg"/>
+
+            <!---// Schema Microdata WebPage -->
+        <meta itemprop="name" content="Pager"/>
+        <meta itemprop="url" content="https://pager.com/faq-support"/>
+        <meta itemprop="description" content="Find answers to some frequently asked questions. If we haven’t answered your question below, please reach out and we’ll get back to you quickly!"/>
+        <meta itemprop="image" content="https://pager.com/img/pager-homepage-tw-750x560.jpg"/>
+
+        <link href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")" rel="stylesheet">
+
+            <!-- Custom CSS -->
+        <link href="@routes.Assets.versioned("stylesheets/terms.css")" rel="stylesheet">
+
+            <!-- Custom Fonts -->
+        <link href="@routes.Assets.versioned("font-awesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.versioned("stylesheets/hover.css")" rel="stylesheet" media="all">
+
+            <!--Custom animation-->
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/animation.css")">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/normalize.css")"/>
+
+        <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/pager-favicon-orange.png")">
+
+            <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+                window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                    $.src="//v2.zopim.com/?2Ac0CRYhmYK68ccMqh1tIjYKmAKn1in7";z.t=+new Date;$.
+                            type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+            <!--End of Zopim Live Chat Script-->
+
+            <!--Enable optimizely-->
+        <script src="//cdn.optimizely.com/js/1189750258.js"></script>
+
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body id="page-top" class="index">
+
+            <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-54C8WV"
+        height="0" width="0" style="display:none ; visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54C8WV');</script>
+            <!-- End Google Tag Manager -->
+
+
+            <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+            <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span></span></a>
+
+                    <a class="navbar-brand page-scroll hvr-pulse" href=""><img id="logonav" alt="..." src="@routes.Assets.versioned("images/new-pager-logo.png")"></a>
+
+                    <div class="navheadercontainer hidden-sm hidden-xs">
+                        <p class="navheader">Available in NYC and San Francisco every day from 8AM to 10PM</p>
+                    </div>
+
+                    <div class="pull-right">
+                        <a href="https://getcare.pager.com/#/login" id="schedulevst" class="btn btn-default hvr-radial-out">
+                            Request a Visit</a>
+                    </div>
+                </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/services.html">Services</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/doctors.html">Doctors</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/pricing.html">Pricing</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/for-business.html">For Business</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/about.html">About Us</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/support.html">Support</a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                    <!-- /.navbar-collapse -->
+            </div>
+                <!-- /.container-fluid -->
+        </nav>
+
+            <!-- Header -->
+
+            <!-- Doctors-->
+        <div class="container" >
+            <div class="row" style="margin-top:75px ;">
+                <div class="col-xs-12 col-md-offset-1 col-md-10 text-center">
+                    <h2>SUPPORT</h2>
+                    <p>Pager believes in better healthcare that’s simple and want you to have a great experience. If we haven’t answered your question below, please reach out and we’ll get back to you quickly!
+                    </p>
+                    <p>Email us anytime:<a class="link" href="mailto:support@@pager.com"> support@@pager.com</a></p>
+                    <p>
+                        Available from 8am - 10pm
+                    </p>
+                    <p>Please call 911 in case of an emergency.</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top:20px ; margin-bottom:80px ;">
+                <div class="col-xs-12 col-md-offset-1 col-md-10">
+                    <h3 style="color:#f98238">Frequently Asked Questions</h3>
+                    <br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                What can the doctors handle?
+                            </h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="panellist">
+                                <li>
+                                    Doctors provide three types of visits: urgent care visits, physicals, and flu shots.
+                                </li>
+                                <li>
+                                    Doctors are able to treat a wide range of urgent care needs. For the full list of medical conditions treated by our doctors, please <a href="services.html">
+                                    click here.</a>
+                                </li>
+                                <li>
+                                    Doctors treat both adults and children.
+                                </li>
+                                <li>
+                                    PLEASE NOTE THAT DOCTORS ON PAGER SHOULD NOT BE SOLICITED FOR EMERGENCY CARE. IF YOU ARE HAVING EMERGENCY, PLEASE DIAL 911.
+                                </li>
+                                <li>
+                                    DOCTORS CANNOT PRESCRIBE NARCOTICS OR SCHEDULED DRUGS.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                How do you find the doctors?
+                            </h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="panellist">
+                                <li>
+                                    Pager recruits and trains doctors who are board-certified and NY licensed. They have been independently verified and credentialed to ensure the best care for our community.
+                                </li>
+                                <li>
+                                    Use the Pager app to find a nearby doctor who is available for a visit. Before selecting a doctor, you’ll be able to see the following information: their bio, medical credentials, photo, and price.
+                                </li>
+                                <li>
+                                    See a list of the doctors <a href="https://pager.com/doctors.html">here.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                When and where can I request a Pager visit?
+                            </h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            Care is available every day in the New York City area from 8 am to 10 pm. Not in NYC? Register now and be the first to know when Pager comes to you.
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                What do I provide to request a visit?
+                            </h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            To register, you will need to provide the following:
+                            <ul>
+                                <li>Full Name</li>
+                                <li>Date of birth</li>
+                                <li>Email</li>
+                                <li>Phone Number</li>
+                                <li>Address</li>
+                                <li>Valid Credit Card Information</li>
+                            </ul>
+                            Your account information is completely secure and private. For more information, please check out our <a class="link" href="https://pager.com/privacy.html">
+                            Privac Policy.</a>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                Can I request a visit for my child? </h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="panellist">
+                                <li>If you are requesting a visit for a child/minor, please swipe left at the top of the app screen to add your child’s information in. After, request a visit and a doctor will be able to take care of your child’s needs.
+                                </li>
+                                <li>
+                                    You can continuing swiping to add any additional children.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                Do doctors make referrals?
+                            </h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="panellist">
+                                <li>Your care may require some additional services or treatment outside the customary house call. Your doctor will notify you of any recommended additional services at the time of your visit. The decision is yours on whether to accept the additional services.
+                                </li>
+                                <li>
+                                    Referrals for additional care from other health care providers or institutions are at the discretion of your doctor.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                Pricing</h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            Pricing is based on the type of visit. The total price of your visit includes all fees (doctor, transportation, etc). If additional services are necessary, you will be notified. Upon completion of your visit, you will receive an email invoice for charges applied to your credit card.
+                            <ul class="panellist">
+                                <li>First-time Urgent Care Visit: $50
+                                </li>
+                                <li>
+                                    Regular Urgent Care Visit: $200
+                                </li>
+                                <li>
+                                    Phone Consultation: $25
+                                </li>
+                                <li>
+                                    Physicals: $100
+                                </li>
+                                <li>
+                                    Prescription Delivery: $0
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                Insurance</h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            Pager is an out-of-network provider. Please check our <a class="link" href="https://pager.com/pricing.html">
+                            Pricing</a>
+                            page for additional information. We’re able to help you submit for reimbursement and quickly working toward becoming an in-network provider.
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                Cancellation Policy</h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            If you cancel more than five minutes after your doctor has confirmed the visit, you will be charged a $10 cancellation fee.
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                Privacy and Security</h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            Please read our full privacy statement <a style="color:#f48239 ;" href="https://pager.com/privacy.html">
+                            here</a>.
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading clickable">
+                            <h3 class="panel-title">
+                                Support</h3>
+                            <span class="pull-right "><i class="glyphicon glyphicon-chevron-up"></i></span>
+                        </div>
+                        <div class="panel-body">
+                            If you have any questions, please email us at <a class="link" href="mailto:support@@pager.com">
+                            support@@pager.com</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-above" style="background-color:#f5f5f6 ;">
+                <div class="container">
+                    <div class="row" style="margin-bottom:40px ; margin-top:0px ;">
+                        <div class="col-xs-12 col-sm-5 col-md-7">
+                            <ul class="linkcontainer">
+                                <li>
+                                    <a class="footerlink" href="https://boards.greenhouse.io/pager?t=kf058s#.VSfhdBPF_0s" target="_blank">
+                                        Careers</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/terms.html">Terms</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/privacy.html">Privacy</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/about.html">About Us</a>
+                                </li>
+                            </ul>
+
+                            <p class="footertext hidden-xs">
+                                Available from 8am - 10pm
+                            </p>
+                            <p class="footertext visible-xs">
+                                Available from 8am - 10pm
+                            </p>
+                            <p class="footertext">&copy; 2015 Pager, Inc. All rights reserved.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-7 col-md-5">
+                            <ul class="linkcontainer2">
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.facebook.com/GetPager" target="_blank" id="fa-facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.instagram.com/GetPager" target="_blank" id="fa-instagram"> <i class="fa fa-fw fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="http://twitter.com/getpager" target="_blank" id="fa-twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.pinterest.com/getpager/" target="_blank" id="fa-pinterest"><i class="fa fa-fw fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="http://www.yelp.com/biz/pager-new-york" target="_blank" id="fa-yelp"><i class="fa fa-fw fa-yelp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+            <!-- jQuery -->
+        <script src="@routes.Assets.versioned("javascripts/jquery.js")"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+
+            <!-- Plugin JavaScript -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/classie.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/cbpAnimatedHeader.js")"></script>
+
+            <!-- Contact Form JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/jqBootstrapValidation.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/contact_me.js")"></script>
+
+            <!-- Custom Theme JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/internal.js")"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,366 @@
+@(title: String)(implicit messages: Messages, requestHeader: RequestHeader)
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>@title</title>
+        <meta name="description" content="On-demand personal care anywhere your employees need it. Learn more about Pager for your business."/>
+        <meta name="keywords" content="pager enterprise, pager for business, pager b2b, medical services, pager services, physical exams, first aid care, at home medical services"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="language" content="en-us" />
+        <link rel="canonical" href="https://pager.com/for-business.html" />
+        <link rel="publisher" href="https://plus.google.com/101236825855071197223/about?hl=en"/>
+
+            <!---// Open Graph Tags -->
+        <meta property="og:title" content="Pager For Your Business"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://pager.com/img/pager-business-hero-fb-og-1200x1200.jpg"/>
+        <meta property="og:image:type" content="image/jpg"/>
+        <meta property="og:url" content="https://pager.com/for-business.html"/>
+        <meta property="og:site_name" content="Pager" />
+        <meta property="og:description" content="On-demand personal care anywhere your employees need it. Learn more about Pager for your business."/>
+        <meta property="og:locale" content="en_US" />
+        <meta property="fb:admins" content="621670044567977"/>
+
+            <!---// Twitter Cards -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:url" content="https://pager.com/for-business.html"/>
+        <meta name="twitter:title" content="Pager For Your Business"/>
+        <meta name="twitter:description" content="On-demand personal care anywhere your employees need it. Learn more about Pager for your business."/>
+        <meta name="twitter:image" content="https://pager.com/img/pager-business-hero-tw-750x560.jpg"/>
+
+            <!---// Schema Microdata WebPage -->
+        <meta itemprop="name" content="Pager"/>
+        <meta itemprop="url" content="https://pager.com/for-business.html"/>
+        <meta itemprop="description" content="On-demand personal care anywhere your employees need it. Learn more about Pager for your business."/>
+        <meta itemprop="image" content="https://pager.com/img/pager-business-hero-tw-750x560.jpg"/>
+
+        <link href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")" rel="stylesheet">
+
+            <!-- Custom CSS -->
+        <link href="@routes.Assets.versioned("stylesheets/internal.css")" rel="stylesheet">
+
+            <!-- Custom Fonts -->
+        <link href="@routes.Assets.versioned("font-awesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.versioned("stylesheets/hover.css")" rel="stylesheet" media="all">
+
+            <!--Custom animation-->
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/animation.css")">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/pager-favicon-orange.png")">
+
+            <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+                var ua = navigator.userAgent.toLowerCase(),
+                        platform = navigator.platform.toLowerCase();
+                platformName = ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0],
+                        isMobile = /ios|android|webos/.test(platformName);
+
+                if (!isMobile) {
+                    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+                        $.src='//v2.zopim.com/?2Ac0CRYhmYK68ccMqh1tIjYKmAKn1in7';z.t=+new Date;$.
+                                type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+                }
+        </script>
+            <!--End of Zopim Live Chat Script-->
+
+            <!--Enable optimizely-->
+        <script src="//cdn.optimizely.com/js/1189750258.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/normalize.css")"/>
+
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/mailchimp.css")"/>
+
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body id="page-top" class="index">
+
+            <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-54C8WV"
+        height="0" width="0" style="display:none ; visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54C8WV');</script>
+            <!-- End Google Tag Manager -->
+
+            <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+            <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span></span></a>
+
+                    <a class="navbar-brand page-scroll hvr-pulse" href="https://pager.com/"><img id="logonav" src="@routes.Assets.versioned("images/new-pager-logo.png")" alt=".."></a>
+
+                    <div class="navheadercontainer hidden-sm hidden-xs">
+                        <p class="navheader">Available in NYC and San Francisco every day from 8AM to 10PM</p>
+                    </div>
+
+                    <div class="pull-right">
+                        <a href="https://getcare.pager.com/#/login" id="schedulevst" class="btn btn-default hvr-radial-out">
+                            Request a Visit</a>
+                    </div>
+                </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/services.html">Services</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/doctors.html">Doctors</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/pricing.html">Pricing</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/for-business.html">For Business</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/about.html">About Us</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/support.html">Support</a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                    <!-- /.navbar-collapse -->
+            </div>
+                <!-- /.container-fluid -->
+        </nav>
+
+            <!-- Header -->
+        <header class="business">
+            <div id="headerlayer" class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="intro-text">
+                            <h1>Pager for Your Business</h1>
+                            <h2>On-demand personal care anywhere your employees need it.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+            <!-- Generic Blurb Section START-->
+        <div class="container">
+            <div class="row" style="margin-top:20px ; margin-bottom:0px ;">
+                <div class="col-sm-12 col-md-offset-1 col-md-10">
+                    <h3 style="margin:15px 0px 18px 0px ;">Who We Are</h3>
+                    <p>
+                        Pager connects your employees with on-demand medical care in their home or office. We help you keep your employees happy and healthy by providing access to efficient and cost-effective urgent care and wellness services.
+                    </p>
+                </div>
+            </div>
+        </div>
+            <!-- Generic Blurb Section END-->
+
+
+            <!-- Body Start-->
+        <div class="container">
+            <div class="row" style="margin-bottom:20px ; margin-top:60px ;">
+                <div class="col-xs-12 col-sm-2 col-md-1 text-center">
+                    <img class="serviceicon2" src="@routes.Assets.versioned("images/icons/physicals-icon.png")" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5">
+                    <h4 class="h4left">Quality Care</h4>
+                    <p class="pleft">Your employees will benefit from high-quality care with board-certified doctors.</p>
+                    <div class="ulcontainer">
+                        <ul class="ulleft">
+                            <li>On-demand Physician Visits</li>
+                            <li>Urgent and Primary Care</li>
+                            <li>Family and Pediatric Coverage</li>
+                            <li>No Fee Telehealth Services</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-2 col-md-1 text-center">
+                    <img class="serviceicon2" src="@routes.Assets.versioned("images/icons/wellness-icon.png")" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5">
+                    <h4 class="h4left">Engaging Wellness</h4>
+                    <p class="pleft">
+                        Pager values holistic care and offers a variety of wellness services for employees.</p>
+                    <div class="ulcontainer">
+                        <ul class="ulleft">
+                            <li>Biometric Screenings</li>
+                            <li>Employment Exams</li>
+                            <li>Flu and Travel Vaccinations</li>
+                            <li>Executive Physicals</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-2 col-md-1 text-center">
+                    <img class="serviceicon2" src="@routes.Assets.versioned("images/icons/technology-icon.png")" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5">
+                    <h4 class="h4left">Leading Technology</h4>
+                    <p class="pleft">Employees gain access to medical care with both convenience and security. </p>
+                    <div class="ulcontainer">
+                        <ul class="ulleft">
+                            <li>Fast Responses from Doctors</li>
+                            <li>Top Security to Maintain Privacy</li>
+                            <li>Medical App Accessible on Web or Mobile</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-2 col-md-1 text-center">
+                    <img class="serviceicon2" src="@routes.Assets.versioned("images/icons/screenings-icon.png")" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-5">
+                    <h4 class="h4left">Intelligent Healthcare</h4>
+                    <p class="pleft">Guiding your employees through a complex, healthcare system.</p>
+                    <div class="ulcontainer">
+                        <ul class="ulleft">
+                            <li>Decrease Healthcare Costs</li>
+                            <li>Enhanced Access to Care</li>
+                            <li>Increase Productivity and Retention</li>
+                            <li>Decrease Absenteeism</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container" style="margin-bottom:50px ;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="socialcontainer">
+                        <p>As Seen In</p>
+                        <img class="pressicons" src="@routes.Assets.versioned("images/press/ny-times.png")" style="width:240px ;" alt="new york times icon" title="How Pager Works Step 1">
+                        <br>
+                        <img class="pressicons" src="@routes.Assets.versioned("images/press/buzzfeed.png")" style="width:160px ;" alt="buzzfeed icon" title="How Pager Works Step 1">
+                        <br>
+                        <img class="pressicons" src="@routes.Assets.versioned("images/press/wsj.png")" style="width:250px" alt="wall street journal icon" title="How Pager Works Step 1">
+                        <br>
+                        <img class="pressicons" src="@routes.Assets.versioned("images/press/fortune.png")" style="width:170px ;" alt="fortune magazine icon" title="How Pager Works Step 1">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-5" style="background-color:#f5f5f6 ;">
+                    <h2 class="form">Learn More About<br>Pager for Your Business:</h2>
+                    <div class="contactform">
+                        <a class="mailto" href="mailto:tracy@@pager.com?subject=Pager For Business">Contact Us</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-above" style="background-color:#f5f5f6 ;">
+                <div class="container">
+                    <div class="row" style="margin-bottom:40px">
+                        <div class="col-xs-12 col-sm-5 col-md-7">
+                            <ul class="linkcontainer">
+                                <li>
+                                    <a class="footerlink" href="https://boards.greenhouse.io/pager?t=kf058s#.VSfhdBPF_0s" target="_blank">
+                                        Careers</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/terms.html">Terms</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/privacy.html">Privacy</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/about.html">About Us</a>
+                                </li>
+                            </ul>
+
+                            <p class="footertext hidden-xs">
+                                Available from 8am - 10pm
+                            </p>
+                            <p class="footertext visible-xs">
+                                Available from 8am - 10pm
+                            </p>
+                            <p class="footertext">&copy; 2015 Pager, Inc. All rights reserved.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-7 col-md-5">
+                            <ul class="linkcontainer2">
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.facebook.com/GetPager" target="_blank" id="fa-facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.instagram.com/GetPager" target="_blank" id="fa-instagram"> <i class="fa fa-fw fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="http://twitter.com/getpager" target="_blank" id="fa-twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.pinterest.com/getpager/" target="_blank" id="fa-pinterest"><i class="fa fa-fw fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="http://www.yelp.com/biz/pager-new-york" target="_blank" id="fa-yelp"><i class="fa fa-fw fa-yelp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+            <!-- jQuery -->
+        <script src="@routes.Assets.versioned("javascripts/jquery.js")"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+
+            <!-- Plugin JavaScript -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/classie.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/cbpAnimatedHeader.js")"></script>
+
+            <!-- Contact Form JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/jqBootstrapValidation.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/contact_me.js")"></script>
+
+            <!-- Custom Theme JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/internal.js")"></script>
+
+            <!-- Mailchimp -->
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='CONAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+
+    </body>
+
+</html>

@@ -1,0 +1,125 @@
+
+
+#mc_embed_signup{
+background:#f5f5f6; 
+clear:left; font:14px Helvetica,Arial,sans-serif; 
+margin-top: 50px;
+margin-bottom: 60px;
+}
+
+h2.form{
+color:#616161;
+font-weight: 300;
+}
+
+#mc_embed_signup h2 {
+  font-weight: 300 !important;
+  padding: 0;
+  margin: 15px 0;
+  font-size: 1.8em;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.clear{
+  display: inline-block;
+  color:#f98238;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border-radius: 6px;
+}
+
+.indicates-required{
+  color:#f98238;
+}
+
+#mc_embed_signup .asterisk {
+  color: #f98238;
+  font-size: 200%;
+}
+
+.form-control{
+  border-radius: 6px;
+}
+
+#mc_embed_signup_scroll {
+  font-size: 17px;
+  color: #616161;
+}
+
+#mc_embed_signup .mc-field-group select {
+  display: inline-block;
+  width: 99%;
+  height: 40px!important;
+  padding: 5px 0;
+  margin-bottom: 2px;
+}
+
+#mc_embed_signup .asterisk1 {color:#f98238; font-size:200%;}
+#mc_embed_signup .mc-field-group .asterisk1 {position:absolute; top:25px; right:10px;}    
+
+.form-control, input {
+  border: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: center;
+  width: 230px;
+}
+
+.buttons{
+  background-color: #fff;
+  width: 140px;
+}
+
+#mc_embed_signup .btn {
+  clear: both;
+  background-color: #f98238;
+  border: 0 none;
+  border-radius: 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 0 50px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: auto;
+}
+
+.clear1 {
+  display: block;
+  color: #f98238;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*---Signup Style End--*/
+
+
+
+
+
+
+

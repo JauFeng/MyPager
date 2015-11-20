@@ -1,0 +1,522 @@
+@(title: String)(implicit messages: Messages, requestHeader: RequestHeader)
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+        <title>@title</title>
+
+        <link href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")" rel="stylesheet">
+
+            <!-- Custom CSS -->
+        <link href="@routes.Assets.versioned("stylesheets/terms.css")" rel="stylesheet">
+
+            <!-- Custom Fonts -->
+        <link href="@routes.Assets.versioned("font-awesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.versioned("stylesheets/hover.css")" rel="stylesheet" media="all">
+
+            <!--Custom animation-->
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/animation.css")">
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/normalize.css")"/>
+
+        <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/pager-favicon-orange.png")">
+
+            <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+                window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+                    $.src="//v2.zopim.com/?2Ac0CRYhmYK68ccMqh1tIjYKmAKn1in7";z.t=+new Date;$.
+                            type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+            <!--End of Zopim Live Chat Script-->
+
+            <!--Enable optimizely-->
+        <script src="//cdn.optimizely.com/js/1189750258.js"></script>
+
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body id="page-top" class="index">
+
+            <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-54C8WV"
+        height="0" width="0" style="display:none ; visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54C8WV');</script>
+            <!-- End Google Tag Manager -->
+
+            <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+            <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span></span></a>
+
+                    <a class="navbar-brand page-scroll hvr-pulse" href=""><img id="logonav" alt="..." src="@routes.Assets.versioned("images/new-pager-logo.png")"></a>
+
+                    <div class="navheadercontainer hidden-sm hidden-xs">
+                        <p class="navheader">Available in NYC and San Francisco every day from 8AM to 10PM</p>
+                    </div>
+
+                    <div class="pull-right">
+                        <a href="https://getcare.pager.com/#/login" id="schedulevst" class="btn btn-default hvr-radial-out">
+                            Page a doctor</a>
+                    </div>
+                </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/services.html">Services</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/doctors.html">Doctors</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/pricing.html">Pricing</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/for-business.html">For Business</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/about.html">About Us</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/support.html">Support</a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                    <!-- /.navbar-collapse -->
+            </div>
+                <!-- /.container-fluid -->
+        </nav>
+
+            <!-- Header -->
+
+            <!-- Doctors-->
+        <div style="background-color:#FBFBFB ;">
+            <div class="container" >
+                <div class="row" style="margin-top:75px ; margin-bottom: -35px">
+                    <div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
+                        <h1>
+                            Consent to Care
+                        </h1>
+                        <h3>
+                            Consent to In-Person Care
+                        </h3>
+                        <p>
+                            You hereby consent and authorize the treating providers you engage through the use of the Pager Application (“Application”), to provide routine medical care and treatment, such as physical exams, diagnostic procedures, treatment of illnesses and injuries, and/or make necessary referrals. You acknowledge that other types of health care professionals such as nurses may take part in the provision of care under the supervision of physicians.
+                        </p>
+                        <p>
+                            You certify that a physician or health care professional has explained the nature, benefits and risks of any procedure or treatment provided from any treating provider you engage through the Application. You have been given the opportunity to ask questions about any concerns regarding the procedure or treatment to be provided from any treating provider you engage through the Application.
+                        </p>
+                        <p>
+                            To the extent the patient is under the age of 18, you represent you are the patient’s parent or legal guardian and are duly authorized under state law to act on behalf of the minor.  All references to “you” shall be deemed to include the minor patient where such reference applies to the individual receiving care or treatment.
+                        </p>
+                        <h3>
+                            Consent to Telemedical Care
+                        </h3>
+                        <p>
+                            <strong>Introduction</strong>
+                        </p>
+                        <p>
+                            Telemedicine involves the use of audio, video or other electronic communications to interact with you, consult with your healthcare provider and/or review your medical information for the purpose of diagnosis, therapy, follow-up and/or education. During your telemedicine consultation, details of your medical history and personal health information may be discussed with you or other health professionals through the use of interactive video, audio or other telecommunications technology. Additionally, a physical examination of you may take place, and video, audio, and/or photo recordings may be taken.
+                        </p>
+                        <p>
+                            Electronic systems used will incorporate network and software security protocols to protect the privacy and security of health information and imaging data, and will include measures to safeguard the data to ensure its integrity against intentional or unintentional corruption.
+                        </p>
+                        <p>
+                            <strong>Anticipated Benefits</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Improved access to medical care by enabling a patient to remain in his/her location while the physician may provide care from a distant site.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    More efficient medical evaluation and management
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Obtaining expertise of a distant specialist.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            <strong>Possible Risks</strong>
+                        </p>
+                        <p>
+                            As with any medical procedure, there are potential risks associated with the use of telemedicine. These risks include, but may not be limited to:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Delays in medical evaluation/treatment could occur due to deficiencies or failures of the electronic equipment;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    In rare instances, security protocols could fail, causing a breach of privacy of personal medical information;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    In rare cases, a lack of access to all of your medical records may result in adverse drug interactions or allergic reactions or other judgment errors.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            <strong>You Understand the Following:</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    You understand that you may expect the anticipated benefits from the use of telemedicine in your care, but that no results can be guaranteed.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You understand that the laws that protect the privacy and security of health information apply to telemedicine, and that no information obtained in the use of telemedicine which identifies you will be disclosed to researchers or other entities without your authorization.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You understand that you have the right to withhold or withdraw your consent to the use of telemedicine in the course of your care at any time.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You understand that you have the right to inspect all information obtained and recorded in the course of a telemedicine interaction, and may receive copies of this information for a reasonable fee.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You understand that a variety of alternative methods of medical care may be available to you, and that you may choose one or more of these at any time. Your physician has explained the alternative to your satisfaction.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You understand that telemedicine may involve electronic communication of your personal medical information to other medical practitioners who may be located in other areas, including out of state.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You understand that it is your duty to inform your physician of electronic interactions regarding your care that you may have with other healthcare providers.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            You consent to receiving protected health information via email or SMS text messaging and understand messages through these communication channels may not be secure.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-offset-2 col-md-8 text-center">
+                        <h1>Terms of Service</h1>
+                        <p>Pager is an interactive mobile application (the “Application”) provided by Pager, Inc. (“Pager”). Use of the Application and our website at https://pager.com (collectively, the “Services”) is governed by the terms and conditions of this Agreement. Although accessible by others, the Services (which include content) are intended for access and use only by U.S. customers. Please read these terms and conditions of use (the “Agreement”) carefully before accessing or using the Services. Throughout this Agreement, Pager is referred to as “we” or “us.”
+                        </p>
+                        <h3>General Terms and Conditions</h3>
+                        <p>By accessing or using the Services, you agree to bound by this Agreement as posted and accessible through our Application or website at the time of your access or use and to use the Services in accordance with the terms and conditions of this Agreement, our Privacy Policy pager.com/privacy and any additional terms and conditions that are referenced herein or that otherwise may apply to specific features of the Services, or to products or services that we make available to you through the Services (all of which are deemed part of this Agreement). If you do not agree to the terms and conditions of use for the Services as set forth in this Agreement, you may not use the Services.
+                        </p>
+                        <p>The Web is an evolving medium. If we need to change the terms of this Agreement in the future, we will post the revised Terms and Conditions of Use through our Application or website and update the “Last Revised” date, below, to reflect the date of the changes. You agree to review these Terms and Conditions of Use each time you use the Services so that you are aware of any modifications made to this Agreement. By continuing to access or use the Services after we post such changes, you agree to the terms of this Agreement, as modified.
+                        </p>
+                        <h3>What Service does Pager Provide?</h3>
+                        <p>Pager is designed to offer information and a means to enable you to obtain telephonic and in-person consultations and treatment for common medical conditions by facilitating the connection between you and nearby health care professionals through the use of the Application. For the avoidance of doubt, the capitalized word “Services” as used in this Agreement refers only to our Application, website and related content and does not refer to the telephonic and in-person consultations and treatment that users receive from health care professionals.
+                        </p>
+                        <h3>How to Use the Application?</h3>
+                        <p>To use the Application, you first need to sign up with Pager. When signing up, you are obligated to provide us with certain information, such as your name, address, date of birth, credit card information and the name of your primary care provider (if you have one). In the future, we may also require users to provide insurance information. Upon successful completion of the sign up process, we will provide you with a personal account, accessible for you with a password of your choice.
+                        </p>
+                        <p>You have to be 18 years of age or older and reside in a jurisdiction in which we offer the Application to use the Application. If you reside in a jurisdiction that restricts the use of the Application because of age, or restricts the ability to enter into contracts such as this one due to age, you must abide by such age limits and you must not use the Application. You represent that you are of legal age to enter into a binding contract.
+                        </p>
+                        <p>
+                            The Application is designed to enable you to send a request for non-emergency medical consultation services to a health care professional. The GPS receiver – which should be installed on the mobile device on which you have downloaded the Application – detects your location. The Application identifies to you healthcare professionals who have licensed the Application from us and that have engaged us to perform related services. You will be able to select a health care professional who you wish will perform healthcare services you. After your selection, the Application then sends a message to the professional you selected that asks the professional whether he or she would like to provide you with the requested healthcare services. In the event a health care professional agrees to provide you with healthcare services, the Application schedules those services and bills you on behalf of the healthcare professional. We make no representation or warranty to you any health care professional will be available to perform health care services
+                        </p>
+                        <p><strong>
+                            PAGER IS NOT ENGAGED IN THE PRACTICE OF MEDICINE, DOES NOT PROVIDE MEDICAL SERVICES, AND IS NOT A HEALTH CARE PROVIDER. THE HEALTH CARE PROFESSIONAL WITH WHICH YOU ESTABLISH A TREATMENT RELATIONSHIP IS SOLELY RESPONSIBLE FOR PROVIDING YOU WITH MEDICAL SERVICES. WE ONLY ACT AS A TECHNOLOGY PLATFORM TO CONNECT YOU WITH HEALTH CARE PROFESSIONALS WHO MAY BE INTERESTED IN PROVIDING YOU WITH MEDICAL SERVICES.
+                        </strong>
+                        </p>
+                        <h3>Your Use of the Services</h3>
+                        <p>You represent and warrant that the information you provide to us is accurate and complete. You acknowledge and agree that we are entitled at all times to verify the information provided and to deny your use of the Services at any time for any reason or no reason.
+                        </p>
+                        <p>You may only access the Services using authorized means. It is your responsibility to check to ensure you download the correct Application for your device. We are not liable if you do not have a compatible device or if you download the wrong version of the Application for your device.
+                        </p>
+                        <p>By accessing or using the Services, you further agree that:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>You will only use the Services for your sole, personal use and you will not resell them to a third party;
+                                </p>
+                            </li>
+                            <li><p>
+                                You will not copy or distribute the Services or other Services content
+                            </p>
+                            </li>
+                            <li><p>
+                                You will not upload or transmit any communications or content of any type that infringes or violates any rights of any party;
+                            </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will not use the Services for any purpose in violation of local, state, federal or international laws;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will not use the Services as a means to distribute advertising or other unsolicited material to any third party;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will not impersonate another person;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will not post material that is unlawful, obscene, defamatory, threatening, harassing, abusive, slanderous, hateful or embarrassing to any other person or entity as determined by us in our sole discretion;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will comply with all applicable third party terms of agreement when using the Services (e.g., your wireless data service agreement);
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will ensure that no unauthorized person shall have access to your mobile device or your Pager passwords or accounts;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will promptly notify us in the event your Pager passwords or accounts have been compromised;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will not assign or otherwise transfer your account to any other person or entity;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will not try to harm the Services or impair the proper operation of the network in any way whatsoever; and
+                            <p>
+                            </li>
+                            <li>
+                                <p>
+                                    You will provide us with whatever proof of identity we may request.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            We reserve the right to immediately terminate your use of the Services should you fail to comply with any of the foregoing rules.
+                        </p>
+                        <p>
+                            You are free to establish a hypertext link to our Services so long as the link does not state or imply any sponsorship of your website or service by us or by our Services. However, you may not, without our prior written permission, frame or inline link any of the content of our Services, or incorporate into another website or other service any of our material, content or intellectual property.
+                        </p>
+                        <h3>Our Right to Use User-Provided Content</h3>
+                        <p>We may, in our sole discretion, permit you to post or submit content and other materials through the Services (collectively, “User-Provided Content”). You grant us, and anyone authorized by us, a royalty-free, perpetual, irrevocable, non-exclusive, unrestricted, worldwide license to use, copy, modify, transmit, sell, exploit, create derivative works from, distribute, and/or publicly perform or display such User-Provided Content, in whole or in part, in any manner or medium (whether now known or hereafter developed), for any purpose that we choose. Also, you grant us, and anyone authorized by us, the right to identify you as the author of any User-Provided Content submitted by you. You will not receive any compensation of any kind for the use of any User-Provided Content submitted by you.           </p>
+                        <p>
+                            You acknowledge that Pager only acts as a passive conduit for the distribution of the User-Provided Content and is not responsible or liable to you or to any third party for the content or accuracy of the User-Provided Content. You understand that we have no obligation to monitor any areas of the Services through which users can post User-Provided Content. However, we reserve the right at all times, in our sole discretion, to screen User-Provided Content and to edit, move, delete, and/or refuse to accept any User-Provided Content that in our judgment violates this Agreement or is otherwise unacceptable or inappropriate, whether for legal or other reasons.
+                        </p>
+                        <p>
+                            Any use by you of the User-Provided Content is entirely at your own risk. You represent and warrant that any User-Provided Content posted or transmitted by you is original to you and does not copy the work of any third party or otherwise infringe any third party intellectual property rights, rights of privacy or publicity rights and does not contain any defamatory or disparaging statements. Furthermore, you represent and warrant that you have the right to grant the license described above.
+                        </p>
+                        <p>
+                            You agree to indemnify and hold harmless Pager, Pager’s affiliates, and each of its and their respective directors, officers, managers, employees, shareholders, agents, representatives, licensors, successors and assigns from and against any and all losses, expenses, damages and costs, including reasonable attorneys’ fees, that arise out of any User-Provided Content posted or transmitted through the Services by you or by others using your account.
+                        </p>
+                        <h3>Payment</h3>
+                        <p>There is no charge to register with us or download the Application on your mobile device. You are charged only when you actually use the Services by scheduling a consultation with a health care professional. Each health care professional sets his or own fees for his or her time and services, but your payment to them includes a portion that is retained by us for our administrative Services in connection with the Application. We reserve the right to introduce a fee in the future for downloading the Application as registering with us. If we decide to introduce such a fee, we will inform you accordingly and allow you to either continue or terminate your account.
+                        </p>
+                        <p>
+                            The rates that apply for the telephonic or in-person medical consultation services provided by the health care professionals can be found on our website and through the Application. These may be modified or updated from time to time. It is your own responsibility to remain informed about the current rates for the medical services made available through the Application.
+                        </p>
+                        <p>
+                            Pager shall, on behalf of the health care professional, charge you for the medical services provided to you by that health care professional. You agree that you will pay for all medical services you receive from the health care professional, and that Pager may charge your credit card account, as provided by you when registering for the Services, for the medical services including any taxes and late fees, as applicable, that may be accrued by or in connection with your account. You are responsible for the timely payment of all fees and for providing Pager with a valid credit card account for payment of all fees at all times. Any payment made is non-refundable.
+                        </p>
+                        <p>
+                            We use a third-party payment processor (the “Payment Processor”) to link us to your credit card account. The processing of payments or credits, as applicable, in connection with your use of the Application will be subject to the terms, conditions and privacy policies of the Payment Processor and your credit card issuer in addition to this Agreement. We are not responsible for any errors by the Payment Processor or your credit card issuer. In connection with your use of the Services (and specifically in connection with your scheduling of a telephonic or in-person consultation with a health care professional), Pager will obtain certain transaction details, which we will use solely in accordance with our Privacy Policy [link to Privacy Policy].
+                        </p>
+                        <p>
+                            At present we do not process any insurance claims, nor will the health care professionals process claims on your behalf. Although the consultations/treatments you receive from health care professionals through the Application may or may not be covered by your insurance, it is solely up to you to contact your health plan, determine whether coverage applies and submit a claim. You are responsible for the full fee (and for paying the fee in advance) regardless of whether you later are able to receive reimbursement from your health plan for part or all of the cost.
+                        </p>
+                        <h3>Intellectual Property Ownership</h3>
+                        <p>
+                            Pager alone (and its licensors, where applicable) shall own all right, title and interest, including all intellectual property rights, in and to the Services and any suggestions, ideas, enhancement requests, feedback, recommendations or other information provided by you or any other party relating to the Services. Any copy, modification, revision, enhancement, adaptation, translation, or derivative work of or created from the Services shall be owned solely and exclusively by Pager, and/or, as applicable, Pager’s third-party vendors, as shall any and all patent rights, copyrights, trade secret rights, trademark rights, and all other proprietary rights, worldwide therein and thereto, and you hereby assign to Pager any and all of your rights, title or interests in the Services or any modification to or derivative work of the Services. You shall not remove or authorize or permit any third party to remove any proprietary rights legend from the Services.
+                        </p>
+                        <p>
+                            This Agreement does not constitute a sale and does not convey to you any rights of ownership in or related to the Services, or any intellectual property rights owned by Pager. Pager’s name, logo and the product names and logos associated with the Services are trademarks of Pager, its affiliated companies or third parties, and no right of license is granted to use them.
+                        </p>
+                        <p>
+                            The materials on the Services are copyrighted by us and/or other applicable rights holders. You may download and reprint a single copy of the materials from the Services for your own personal, noncommercial use only, provided that you keep intact all credits and copyright and other proprietary notices. Any other use of the materials is strictly prohibited without our prior written permission and the permission of the applicable rights holder(s).
+                        </p>
+                        <h3>Application License</h3>
+                        <p>
+                            Subject to your compliance with the terms and conditions of this Agreement, Pager grants you a limited, non-exclusive, non-transferable license to download and install a copy of the Application on a mobile device that you own or control and to run such copy of the Application solely for your own personal use.
+                        </p>
+                        <p>
+                            You shall not (i) license, sublicense, sell, resell, transfer, assign, distribute or otherwise commercially exploit or make available to any third party the Application in any way; (ii) modify or make derivative works based upon the Application; (iii) reverse engineer or access the Application in order to (a) design or build a competitive product or service, (b) design or build a product using similar ideas, features, functions or graphics of the Application, or (c) copy any ideas, features, functions or graphics of the Application; or (v) launch an automated program or script, including, but not limited to, web spiders, web crawlers, web robots, web ants, web indexers, bots, viruses or worms, or any program which may make multiple server requests per second, or unduly burdens or hinders the operation and/or performance of the Services.
+                        </p>
+                        <h3>Disclaimer</h3>
+                        <p>
+                            THE SERVICES AND ANY INFORMATION CONTAINED ON OR PROVIDED THROUGH THE SERVICES ARE PROVIDED ON AN “AS IS” BASIS. ANY ACCESS TO OR USE OF THE SERVICES IS VOLUNTARY. WE WILL REGARD ALL ACCESS OR USE AS VOLUNTARY AND AT THE SOLE RISK OF THE USER.
+                        </p>
+                        <p>
+                            The Services are solely designed to enable you to obtain telephonic and in-person consultations and treatment for common medical conditions by facilitating the connection between you and nearby health care providers. NOTHING CONTAINED IN THE SERVICES IS OR SHOULD BE CONSIDERED, OR USED AS A SUBSTITUTE FOR, MEDICAL ADVICE, DIAGNOSIS OR TREATMENT. The services provided in the Application are here to help connect you to nearby health care providers only. Any information contained in the Services should not be relied upon as the basis of any health-care decision. The Services do not constitute the practice of any medical, nursing or other professional health care advice, diagnosis or treatment.
+                        </p>
+                        <p><strong>
+                            NEVER DISREGARD, AVOID OR DELAY IN OBTAINING MEDICAL ADVICE FROM YOUR DOCTOR OR OTHER QUALIFIED HEALTH CARE PROVIDER BECAUSE OF SOMETHING YOU HAVE READ THROUGH OUR APPLICATION OR WEBSITE. IF YOU HAVE OR SUSPECT THAT YOU HAVE A MEDICAL PROBLEM OR CONDITION, YOU MAY USE THIS APPLICATION TO TRY TO CONTACT A NEARBY QUALIFIED HEALTH CARE PROFESSIONAL. HOWEVER, IF YOU ARE EXPERIENCING A MEDICAL EMERGENCY, PLEASE CALL 911 FOR EMERGENCY MEDICAL HELP.</strong>
+                        </p>
+                        <p>
+                            We do not control, supply, endorse, warrant or guarantee any information, products, services or merchandise supplied by any of the health care providers that you may connect with via the Services.
+                        </p>
+                        <p>
+                            We also do not warrant or guarantee that files that may be available for downloading through the Services will be free of infections or viruses, worms, Trojan horses or other code that contains contaminating or destructive properties.
+                        </p>
+                        <p>
+                            We, and our technology service providers, cannot and do not guarantee or warrant against errors, omissions, delays, interruptions or losses, including loss of data. You download and use the Services at your own discretion and risk, and you are solely responsible for any damages to your hardware device(s) or loss of data that results from the download or use of the Services. Users of the Services are responsible for maintaining a means external to the Services for the reconstruction of any lost data.
+                        </p>
+                        <p>
+                            WE DO NOT MAKE ANY EXPRESS OR IMPLIED WARRANTIES, REPRESENTATIONS OR ENDORSEMENTS OF ANY KIND WHATSOEVER (INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE OR NONINFRINGEMENT, OR ANY WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE) WITH REGARD TO THE SERVICES, OR WITH RESPECT TO ANY INFORMATION, PRODUCT, SERVICE, MERCHANDISE OR OTHER MATERIAL PROVIDED ON OR THROUGH THE SERVICES (INCLUDING ANY CONSULTATIONS OR OTHER SERVICES YOU MAY OBTAIN FROM HEALTH CARE PROVIDERS THAT YOU CONNECT WITH VIA THE SERVICES). WE DO NOT WARRANT OR GUARANTEE THE ACCURACY, COMPLETENESS, CORRECTNESS, TIMELINESS OR USEFULNESS OF ANY INFORMATION, PRODUCTS, SERVICES, MERCHANDISE OR OTHER MATERIAL PROVIDED THROUGH THE SERVICES OR ON THE INTERNET GENERALLY. WE MAKE NO WARRANTY OR GUARANTEE THAT THE SERVICES WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE. YOUR SOLE AND EXCLUSIVE REMEDY FOR DISSATISFACTION WITH THE SERVICES IS TO STOP USING THEM.
+                        </p>
+                        <h3>Limitation of Liability</h3>
+                        <p>
+                            TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, IN NO EVENT WILL PAGER BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, PUNITIVE, EXEMPLARY, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE) ARISING OUT OF THIS AGREEMENT, OR THE USE OF, OR THE INABILITY TO USE, THE SERVICES, INCLUDING, WITHOUT LIMITATION, ANY INFORMATION OR DATA MADE AVAILABLE THROUGH THE SERVICES OR ANY SERVICES PERFORMED BY ANY HEALTH CARE PROVIDERS THAT YOU CONNECT WITH VIA THE SERVICES (INCLUDING CLAIMS OF MEDICAL MALPRACTICE AGAINST THOSE HEALTH CARE PROVIDERS), EVEN IF WE ARE ADVISED BEFOREHAND OF THE POSSIBILITY OF SUCH DAMAGES. IN THE EVENT THE FOREGOING LIMITATION OF LIABILITY IS DETERMINED BY A COURT OF COMPETENT JURISDICTION TO BE UNENFORCEABLE, THEN THE MAXIMUM LIABILITY OF PAGER FOR ALL CLAIMS (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE AND MEDICAL MALPRACTICE), OR OTHERWISE) OF EVERY KIND ARISING OUT OF THIS AGREEMENT WILL NOT EXCEED ONE HUNDRED DOLLARS ($100.00). THE FOREGOING LIMITATION OF LIABILITY OF PAGER WILL COVER, WITHOUT LIMITATION, ANY TECHNICAL MALFUNCTION, COMPUTER ERROR OR LOSS OF DATA, AND ANY OTHER INJURY, ARISING FROM THE USE OF THE SERVICES.
+                        </p>
+                        <h3>Indemnification</h3>
+                        <p>You agree to indemnify and hold harmless Pager, Pager’s affiliates, and each of its and their respective directors, officers, managers, employees, shareholders, agents, representatives, licensors, successors and assigns from and against any and all losses, expenses, damages and costs, including reasonable attorneys’ fees, that arise out of your use of the Services, violation of this Agreement by you or any other person using your account, or your violation of any rights of another. We reserve the right to control the defense of any claim for which we are entitled to indemnification under this section. In such event, you agree to provide us with such cooperation as is reasonably requested by us.
+                        </p>
+                        <h3>Modifications to, or Discontinuation of, the Services</h3>
+                        <p>
+                            We reserve the right at any time and from time to time to modify or discontinue, temporarily or permanently, the Services, or any portion thereof, with or without notice. You agree that we will not be liable to you or any third party for any modification, suspension or discontinuance of the Services or any portion thereof.
+                        </p>
+                        <h3>Privacy</h3>
+                        <p>
+                            Your use of the Services is subject to Pager’s <a class="link" href="#">Privacy Policy.</a>
+                            Please review this policy so you understand what information we collect through the Services, how we use it, how we secure it, and when we may share it.
+                        </p>
+                        <h3>Notice of Copyright Infringement</h3>
+                        <p>
+                            If you are a copyright owner who believes your copyrighted material has been reproduced, posted or distributed through the Services in a manner that constitutes copyright infringement, please inform our designated copyright agent by sending written notice by U.S. Mail to 55 Fifth Avenue, 18th floor, New York, New York 10003, Attn: Copyright Agent, or by email to privacy@@pager.com. Please include the following information in your written notice: (1) a detailed description of the copyrighted work that is allegedly infringed upon; (2) a description of the location of the allegedly infringing material on the Services; (3) your contact information, including your address, telephone number, and, if available, email address or other electronic address; (4) a statement by you indicating that you have a good-faith belief that the allegedly infringing use is not authorized by the copyright owner, its agent, or the law; (5) a statement by you, made under penalty of perjury, affirming that the information in your notice is accurate and that you are authorized to act on the copyright owner’s behalf; and (6) an electronic or physical signature of the copyright owner or someone authorized on the owner’s behalf to assert infringement of copyright and to submit the statement. Please note that the contact information provided in this paragraph is for suspected copyright infringement only. Contact information for other matters can be found elsewhere on our website or through the Application.
+                        </p>
+                        <h3>Miscellaneous</h3>
+                        <p>This Agreement constitutes the entire agreement between us and you with respect to the subject matter contained in this Agreement and supersede all previous and contemporaneous agreements, proposals and communications, written or oral, related to that subject matter. You also may be subject to additional terms and conditions that may apply when you use the products or services of a third party that are available through the Services. In the event of any conflict between any such third-party terms and conditions and this Agreement, this Agreement will govern. This Agreement will be governed by and construed in accordance with the laws of the State of New York, without regard to any conflicts of law provisions contained therein.
+                        </p>
+                        <p>
+                            This Agreement is personal to you and you may not assign it to anyone. If any provision of this Agreement is found to be unlawful, void, or for any reason unenforceable, then that provision will be deemed severable from this Agreement and will not affect the validity and enforceability of any remaining provisions. This Agreement is not intended to benefit any third party, and do not create any third party beneficiaries. Accordingly, this Agreement may only be invoked or enforced by you or us. You agree that regardless of any statute or law to the contrary, any claim or cause of action that you may have arising out of or related to use of the Services or this Agreement must be filed by you within one year after such claim or cause of action arose or be forever barred. Any and all provisions of this Agreement that would reasonably be expected to be performed after the termination or expiration of this Agreement shall survive and be enforceable after such termination or expiration including, without limitation, provisions relating to ownership, indemnification, limitation of liability and governing law.
+                        </p>
+                        <p>
+                            <strong>Last Revised:</strong> November 6, 2015
+                        </p>
+                        <p style="margin-bottom:75px ;">2015 <span itemprop="name">Pager, Inc.</span>
+                            All rights reserved.</p>
+                    </div>
+                </div>
+            </div
+        </div>
+
+
+        <footer>
+            <div class="footer-above" style="background-color:#f5f5f6 ;">
+                <div class="container">
+                    <div class="row" style="margin-bottom:40px ; margin-top:0px ;">
+                        <div class="col-xs-12 col-sm-5 col-md-7">
+                            <ul class="linkcontainer">
+                                <li>
+                                    <a class="footerlink" href="https://boards.greenhouse.io/pager?t=kf058s#.VSfhdBPF_0s" target="_blank">
+                                        Careers</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/terms.html">Terms</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/privacy.html">Privacy</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/about.html">About Us</a>
+                                </li>
+                            </ul>
+
+                            <p class="footertext hidden-xs">
+                                Available from 8am - 10pm
+                            </p>
+                            <p class="footertext visible-xs">
+                                Available from 8am - 10pm
+                            </p>
+                            <p class="footertext">&copy; 2015 Pager, Inc. All rights reserved.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-7 col-md-5">
+                            <ul class="linkcontainer2">
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.facebook.com/GetPager" target="_blank" id="fa-facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.instagram.com/GetPager" target="_blank" id="fa-instagram"> <i class="fa fa-fw fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="http://twitter.com/getpager" target="_blank" id="fa-twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="https://www.pinterest.com/getpager/" target="_blank" id="fa-pinterest"><i class="fa fa-fw fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a class="footersocial btn-social" href="http://www.yelp.com/biz/pager-new-york" target="_blank" id="fa-yelp"><i class="fa fa-fw fa-yelp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+            <!-- jQuery -->
+        <script src="@routes.Assets.versioned("javascripts/jquery.js")"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+
+            <!-- Plugin JavaScript -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/classie.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/cbpAnimatedHeader.js")"></script>
+
+            <!-- Contact Form JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/jqBootstrapValidation.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/contact_me.js")"></script>
+
+            <!-- Custom Theme JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/internal.js")"></script>
+
+    </body>
+
+</html>

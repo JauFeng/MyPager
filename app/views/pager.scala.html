@@ -1,0 +1,654 @@
+@(title: String)(implicit messages: Messages, requestHeader: RequestHeader)
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=yes">
+
+        <title>@title</title>
+
+        <meta name="description" content="Get immediate, personalized medical attention for you and your loved ones, from a trusted, board-certified doctor. Only $50 for the first visit. Learn More." />
+        <meta name="keywords" content="doctor house calls, doctor home visits, urgent care, on demand doctors, doctors on demand, pager, pager app, doctors at your door" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="en-us" />
+        <link rel="canonical" href="https://pager.com" />
+        <link rel="publisher" href="https://plus.google.com/101236825855071197223/about?hl=en"/>
+
+            <!---// Open Graph Tags -->
+        <meta property="og:title" content="On-Demand House Call Doctors In NYC Within 2 Hours"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://pager.com/img/pager-homepage-fb-og-1200x1200.jpg"/>
+        <meta property="og:image:type" content="image/jpg">
+        <meta property="og:url" content="https://pager.com"/>
+        <meta property="og:description" content="Get immediate, personalized medical attention for you and your loved ones, from a trusted, board-certified doctor. Get care in the comfort of your home, office or hotel right away. Only $50 for the first visit. Learn More."/>
+        <meta property="og:locale" content="en_US" />
+        <meta property="fb:admins" content="621670044567977"/>
+            <!---// Twitter Summary Cards -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:url" content="https://pager.com" />
+        <meta name="twitter:title" content="On-Demand House Call Doctors In NYC Within 2 Hours" />
+        <meta name="twitter:description" content="Get immediate, personalized medical attention for you and your loved ones, from a trusted, board-certified doctor. Get care in the comfort of your home, office or hotel right away. Only $50 for the first visit. Learn More." />
+        <meta name="twitter:image" content="https://pager.com/img/pager-homepage-tw-750x560.jpg" />
+
+            <!---// Schema Microdata WebSite -->
+        <meta itemprop="name" content="Pager"/>
+        <meta itemprop="url" content="https://pager.com"/>
+        <meta itemprop="description" content="Get immediate, personalized medical attention for you and your loved ones, from a trusted, board-certified doctor. Only $50 for the first visit. Learn More."/>
+        <meta itemprop="image" content="https://pager.com/img/pager-homepage-tw-750x560.jpg"/>
+
+        <link href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")" rel="stylesheet">
+
+            <!-- Custom CSS -->
+        <link href="@routes.Assets.versioned("stylesheets/main.css")" rel="stylesheet">
+
+            <!-- Custom Fonts -->
+        <link href="@routes.Assets.versioned("font-awesome/css/font-awesome.min.css")" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="@routes.Assets.versioned("stylesheets/hover.css")" rel="stylesheet" media="all">
+
+            <!--Custom animation-->
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/animation.css")">
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("stylesheets/normalize.css")"/>
+
+        <link rel="icon" type="image/png" href="@routes.Assets.versioned("images/pager-favicon-orange.png")">
+
+            <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+                var ua = navigator.userAgent.toLowerCase(),
+                        platform = navigator.platform.toLowerCase();
+                platformName = ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0],
+                        isMobile = /ios|android|webos/.test(platformName);
+
+                if (!isMobile) {
+                    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+                            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+                    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+                        $.src='//v2.zopim.com/?2Ac0CRYhmYK68ccMqh1tIjYKmAKn1in7';z.t=+new Date;$.
+                                type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+                }
+        </script>
+            <!--End of Zopim Live Chat Script-->
+
+            <!--Enable optimizely-->
+        <script src="//cdn.optimizely.com/js/1189750258.js"></script>
+
+            <!--IOS Smart Banner-->
+        <meta name="apple-itunes-app" content="app-id=864058356, affiliate-data=myAffiliateData, app-argument=myURL">
+
+            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body id="page-top" class="index">
+
+            <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-54C8WV"
+        height="0" width="0" style="display:none ; visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54C8WV');</script>
+            <!-- End Google Tag Manager -->
+
+            <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+            <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span></span></a>
+
+                    <a class="navbar-brand page-scroll hvr-pulse " href="https://pager.com/"><img id="logonav" alt="An orange Pager logo with a transparent background found on the navigation." src="@routes.Assets.versioned("images/new-pager-logo.png")"></a>
+
+                    <div class="navheadercontainer hidden-sm hidden-xs">
+                        <p class="navheader">Available in NYC and San Francisco every day from 8AM to 10PM</p>
+                    </div>
+                </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right" style="padding-bottom:6px ;">
+                        <li class="page-scroll">
+                            <a href="https://getcare.pager.com/#/login">Log In</a>
+                        </li>
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="/services">Services</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/doctors.html">Doctors</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/pricing.html">Pricing</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/for-business.html">For Business</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/about.html">About Us</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="https://pager.com/support.html">Support</a>
+                        </li>
+                        <li>
+                            <a class="navBarCta visible-xs" href="https://getcare.pager.com/#/login">Request a Visit</a>
+                        </li>
+                    </ul>
+                </div>
+                    <!-- /.navbar-collapse -->
+            </div>
+                <!-- /.container-fluid -->
+        </nav>
+
+            <!-- Header / Permanent Nav -->
+
+        <header class="header" id="header">
+            <div id="headerlayer" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a class="hvr-pulse hidden-xs" href="https://pager.com/"><img class="fixedlogo" alt="A white pager logo with a transparent background on top of the homepage hero image." src ="@routes.Assets.versioned("images/new-pager-logo-white.svg")"></a>
+                        <a class="hvr-pulse visible-xs" href="https://pager.com/"><img class="fixedlogo" alt="A white pager logo with a transparent background on top of the homepage hero image." src ="@routes.Assets.versioned("images/new-pager-logo.png")"></a>
+                    </div>
+                    <div class="col-sm-10 hidden-xs ">
+                        <ul class="main">
+                            <li class="main">
+                                <a class="main-nav-link" href="/services">Services</a>
+                            </li>
+                            <li class="main">
+                                <a class="main-nav-link" href="https://pager.com/doctors.html">Doctors</a>
+                            </li>
+                            <li class="main">
+                                <a class="main-nav-link" href="https://pager.com/pricing.html">Pricing</a>
+                            </li>
+                            <li class="main">
+                                <a class="main-nav-link" href="https://pager.com/for-business.html">For Business</a>
+                            </li>
+                            <li class="main">
+                                <a class="main-nav-link" id="log-in" href="https://getcare.pager.com/#/login">Log In</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container text-vertical-center hidden-xs">
+                    <div class="row">
+                        <h1>There's a Doctor In The House</h1>
+                        <h2>Pager Connects You with On-Demand Doctors, Every Day, 8am to 10pm</h2>
+                        <a href="https://getcare.pager.com/#/login" class="btn btn-primary hvr-wobble-vertical page">
+                            Request a Visit</a>
+                    </div>
+                </div>
+
+                <div class="container text-vertical-center visible-xs">
+                    <div class ="innerContainerMobile">
+                        <div class="row">
+                            <h1>Now The Doctor<br>Comes To You</h1>
+                            <h2>Get On-Demand House Call<br>Doctors Within 2 Hours</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="fullwidthbtn visible-xs">
+                <div class="container" style="padding-top:0px ;">
+                    <div class="row">
+                        <a href="https://getcare.pager.com/#/login" class="btn btn-primary hvr-wobble-vertical page">
+                            Request a Visit</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="fullwidth hidden-xs">
+                <div class="container" style="padding-top:0px ;">
+                    <div class="row">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="7000">
+                                <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <a href="http://www.nbcnews.com/business/consumer/uber-tests-demand-flu-shots-3-major-cities-n232251"><img class="quotepic fadeIn" id="quotepic1" src="@routes.Assets.versioned("images/press/Nbc-logo.png")" alt="..."></a>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-8 quotes">
+                                                <p class="quotes">
+                                                    "Now you can summon a doctor to your own home, thanks to a pager: the Pager app." - <em>
+                                                    NBC New York </em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <img class="quotepic fadeIn" id="quotepic2" src="@routes.Assets.versioned("images/patient/patient-testimonial-maria-sm.jpg")" alt="...">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-9 quotes">
+                                                <p class="quotes">
+                                                    “It was GREAT! Couldn't have asked for better service. So much better than having to go to the ER.” - <em>
+                                                    Maria S.</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <a href="http://7online.com/health/new-app-brings-the-doctor-to-you-for-house-calls/402491/"><img class="quotepic fadeIn" id="quotepic1" src="@routes.Assets.versioned("images/press/abc-logo.png")" alt="..."></a>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-9 quotes">
+                                                <p class="quotes">
+                                                    "Just when you thought house calls were a thing of the past, they're back, and enhanced by modern technology." - <em>
+                                                    ABC7</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <img class="quotepic fadeIn" id="quotepic2" src="@routes.Assets.versioned("images/patient/patient-testimonial-sarah-sm.jpg")" alt="...">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-9 quotes">
+                                                <p class="quotes">
+                                                    "I was so grateful to stay in bed while I was sick. Now, I'll always use Pager to have a doctor come to my apartment." - <em>
+                                                    Sarah S.</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+        <section id="start">
+            <div class="fullwidth2 visible-xs">
+                <div class="container" style="padding-top:0px ;">
+                    <div class="row">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="7000">
+
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <a href="http://www.nbcnews.com/business/consumer/uber-tests-demand-flu-shots-3-major-cities-n232251"><img class="quotepic fadeIn" id="quotepic1" src="@routes.Assets.versioned("images/press/Nbc-logo.png")" alt="..."></a>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-8 quotes">
+                                                <p class="quotes">
+                                                    "Now you can summon a doctor to your own home, thanks to a pager: the Pager app." - <em>
+                                                    NBC New York </em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <img class="quotepic fadeIn" id="quotepic2" src="@routes.Assets.versioned("images/patient/patient-testimonial-maria-sm.jpg")" alt="...">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-9 quotes">
+                                                <p class="quotes">
+                                                    “It was GREAT! Couldn't have asked for better service. So much better than having to go to the ER.” - <em>
+                                                    Maria S.</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <a href="http://7online.com/health/new-app-brings-the-doctor-to-you-for-house-calls/402491/"><img class="quotepic fadeIn" id="quotepic1" src="@routes.Assets.versioned("images/press/abc-logo.png")" alt="..."></a>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-9 quotes">
+                                                <p class="quotes">
+                                                    "Just when you thought house calls were a thing of the past, they're back, and enhanced by modern technology." - <em>
+                                                    ABC7</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div>
+                                        <div class="contentquotes">
+                                            <div class="col-xs-12 col-sm-2 col-md-offset-1 col-md-1">
+                                                <img class="quotepic fadeIn" id="quotepic2" src="@routes.Assets.versioned("images/patient/patient-testimonial-sarah-sm.jpg")" alt="...">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-9 col-md-9 quotes">
+                                                <p class="quotes">
+                                                    "I was so grateful to stay in bed while I was sick. Now, I'll always use Pager to have a doctor come to my apartment." - <em>
+                                                    Sarah S.</em>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Body Start-->
+        <div class="container">
+            <div class="row copy" style="margin-top:75px ; margin-bottom:30px ;">
+                <div class="col-sm-4">
+                    <a href="/services"><img class="valueicon" id="valueicon1" alt="A white, grey, and orange icon of a hand holding a smartphone with a clock on it." title="Pager Convenient Icon" src="@routes.Assets.versioned("images/icons/pager-convenient-icon-200x200.png")"></a>
+                    <h4>Convenience</h4>
+                    <p>See a doctor within 2 hours in the comfort of your home, office or hotel room.
+                    </p>
+                    <p>
+                        <a class="centerlink hvr-icon-wobble-horizontal" href="/services">Learn More</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="col-sm-4">
+                    <a href="doctors"><img class="valueicon" id="valueicon2" alt="A white, grey, and orange icon of a person with arms raised with an orange heard in the chest area." title="Pager Quality Icon" src="@routes.Assets.versioned("images/icons/pager-effective-icon-200x200.png")"></a>
+                    <h4>Quality</h4>
+                    <p>Get immediate access to board-certified doctors for the whole family.
+                    </p>
+                    <p>
+                        <a class="centerlink hvr-icon-wobble-horizontal" href="doctors.html">Learn More</a>
+                    </p>
+                    <br>
+                </div>
+                <div class="col-sm-4">
+                    <a href="pricing.html"><img class="valueicon" id="valueicon3" alt="A white, grey, and orange icon of a piggy bank with orange coins above it." title="Pager Affordable Icon" src="@routes.Assets.versioned("images/icons/pager-affordable-icon-200x200.png")"></a>
+                    <h4>Affordable</h4>
+                    <p>Visits start at $50 and are reimbursed by most health plans. No hidden fees.
+                    </p>
+                    <p>
+                        <a class="centerlink hvr-icon-wobble-horizontal" href="pricing.html">Learn More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color:#f5f5f6 ;">
+            <div class="container">
+                <div class="row" style="margin-top:0px ; margin-bottom:8px">
+                    <div id="promocontainer" class="col-xs-12 col-sm-12 col-sm-offset-1 col-sm-10">
+                        <div class="col-xs-12 col-sm-12 col-md-8">
+                            <span class="promoheading">Complimentary Welcome Visit</span>
+                            <p style="text-align:left ; padding-left: 0px ; padding-top:8px ;">
+                                Check your vitals and receive a personalized consultation from a healthcare professional. Register and use promo code WELCOMEVISIT.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <div class="btncontainer">
+                                <a href="https://pager.com/health-check-screening.html" class="promobtn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- Our Services -->
+        <div class="servicesection">
+            <div class="container imgsection">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+            <!-- How to -->
+        <div style="background-color:#f5f5f6 ;">
+            <div class="container">
+                <div class="row" style="margin-top:0px ;">
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 text-center">
+                        <h3 style="margin-bottom:20px ;">How Does it Work?</h3>
+                        <h4 style="margin-top:0px ; margin-bottom:55px ;">
+                            The Pager app takes care of everything so you can focus on getting better.</h4>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom:0px ; margin-bottom:20px ;">
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 servicecontainer">
+                        <div class="iconheader">
+                            <h4 class="h4left">1.</h4>
+                            <p class="pleft2">
+                                Request a visit at the tap of a button. The doctor will call you to assess your need.</p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 servicecontainer">
+                        <div class="iconheader">
+                            <h4 class="h4left">2.</h4>
+                            <p class="pleft2">
+                                Doctor visits, diagnoses, treats and prescribes medication as needed. Prescription delivery available upon request.
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 servicecontainer">
+                        <div class="iconheader">
+                            <h4 class="h4left">3.</h4>
+                            <p class="pleft2">The doctor will follow-up with you the next day via call or message.</p>
+                            <br>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 text-center">
+                        <a class="centerlink3 hvr-icon-wobble-horizontal" style="margin-top:-10px ; margin-bottom:50px ;" href="https://itunes.apple.com/us/app/pager-doctor-house-calls-on/id864058356?mt=8" target= target="_blank">
+                            Download the App</a>
+                    </div>
+
+                </div>
+                    <!--Apple CTA
+            <div class="row text-center" style="margin-bottom:70px;">
+                <div class="col-xs-12">
+                    <a href="https://itunes.apple.com/us/app/pager-doctor-house-calls-on/id864058356?mt=8" target="_blank" > <img style="width:175px; margin-top:0px; " src="https://pager.com/img/applebadge.svg" alt=".."></a>
+                </div>
+            </div>
+            Apple CTA End-->
+            </div>
+        </div>
+
+
+            <!-- Our Doctors-->
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3 style="margin-bottom:0px ;">Trusted Doctors</h3>
+                        <h4 style="margin-top:20px ; margin-bottom:50px ;">
+                            Board-certified doctors handle most urgent care needs for the entire family.</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4" itemscope itemtype="http://schema.org/Person">
+                        <a itemprop="url" href="/doctors.html#Brijal" target="_blank">
+                            <img itemprop="image" class="doctors" src="@routes.Assets.versioned("images/doctors/Brijal.jpg")" alt="Profile photo for Pager house call doctor Brijal Patel of North Shore-LIJ" title="Pager House Call Doctor Brijal Patel">
+                        </a>
+                        <h4>
+                            <span itemprop="name">Brijal Patel</span> <span itemprop="honorificSuffix">MD</span>
+                        </h4>
+                        <p style="font-weight:300 ; color:#9E9E9E ; margin-top:-8px ; margin-bottom:14px ;">
+                            North Shore-LIJ
+                    <p>
+                            <!--
+                    <img alt= "Beth Israel Mount Sinai logo in grey with a transparent background." title="Beth Israel Mount Sinai Logo" class="hospitalbadge" src= "https://pager.com/img/badges/beth-israel.png">
+                    <br>
+                    -->
+
+                        <br>
+                    </div>
+                    <div class="col-sm-12 col-sm-4" itemscope itemtype="http://schema.org/Person">
+                        <a itemprop="url" href="doctors.html#Toko"><img itemprop="image" class="doctors" src="@routes.Assets.versioned("images/doctors/pager-dr-toko-morimoto-488x488.jpg")" alt="Profile photo for Pager house call doctor Toko Morimoto of Mount Sinai St. Luke's Israel hospital." title="Pager House Call Doctor Toko Morimoto"></a>
+                        <h4><span itemprop="name">Toko Morimoto</span> <span itemprop="honorificSuffix">MD</span></h4>
+                        <meta itemprop="affiliation" content="Beth Israel St. Lukes Hospital" />
+
+                        <p style="font-weight:300 ; color:#9E9E9E ; margin-top:-8px ; margin-bottom:14px ;">
+                            Mount Sinai St. Luke's Hospital Center<p>
+
+                            <!--
+                    <img class="hospitalbadge" alt ="Beth Israel St. Lukes logo in grey with a transparent background." title="Beth Israel St. Lukes Logo" src= "https://pager.com/img/badges/st-lukes.png">
+                    <br>
+                    -->
+
+                        <br>
+
+                    </div>
+                    <div class="col-sm-12 col-sm-4" itemscope itemtype="http://schema.org/Person">
+                        <a itemprop="url" class="doctorlink" href="doctors.html#Evan"><img itemprop="image" class="doctors" src="@routes.Assets.versioned("images/doctors/cohen_2x.jpg")" alt="Profile photo for Pager house call doctor Evan Cohen" title="Pager House Call Doctor Evan Cohen"></a>
+                        <h4><span itemprop="name">Evan Cohen</span> <span itemprop="honorificSuffix">MD</span></h4>
+                        <p style="font-weight:300 ; color:#9E9E9E ; margin-top:-8px ; margin-bottom:14px ;">
+                            Cooper University Hospital<p>
+                            <!--
+                    <img class="hospitalbadge2" alt="North Shore LIJ Lenox Hill Hospital logo in grey with a transparent background." title="North Shore LIJ Lenox Hill Hospital Logo" src= "https://pager.com/img/badges/lenox-hill.png">
+                    <br>
+                    -->
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-sm text-center">
+                        <a class="centerlink3 hvr-icon-wobble-horizontal" href="https://pager.com/doctors.html">
+                            Meet the Doctors
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Footer -->
+        <footer>
+            <div class="footer-above" style="background-color:#f5f5f6 ;" itemscope itemtype="http://schema.org/Organization">
+                <div class="container-fluid">
+                    <div class="row" style="margin-bottom:40px ;">
+                        <div class="col-xs-12 col-sm-5 col-md-7">
+                            <ul class="linkcontainer">
+                                <li>
+                                    <a class="footerlink" href="https://boards.greenhouse.io/pager?t=kf058s#.VSfhdBPF_0s" target="_blank">
+                                        Careers</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/terms.html">Terms</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/privacy.html">Privacy</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/about.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="footerlink" href="https://pager.com/support.html">Support</a>
+                                </li>
+                            </ul>
+
+                            <p class="footertext hidden-xs">
+                                Available from 8am - 10pm
+                            </p>
+                            <p class="footertext visible-xs">
+                                Available from 8am - 10pm
+                            </p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-7 col-md-5">
+                            <meta itemprop="sameAs" content="https://www.wikidata.org/wiki/Q19981925">
+                            <ul class="linkcontainer2">
+                                <li>
+                                    <a itemprop="sameAs" class="footersocial btn-social" href="https://www.facebook.com/GetPager" target="_blank" id="fa-facebook"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a itemprop="sameAs" class="footersocial btn-social" href="https://www.instagram.com/GetPager" target="_blank" id="fa-instagram"> <i class="fa fa-fw fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a itemprop="sameAs" class="footersocial btn-social" href="http://twitter.com/getpager" target="_blank" id="fa-twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a itemprop="sameAs" class="footersocial btn-social" href="https://www.pinterest.com/getpager/" target="_blank" id="fa-pinterest"><i class="fa fa-fw fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a itemprop="sameAs" class="footersocial btn-social" href="http://www.yelp.com/biz/pager-new-york" target="_blank" id="fa-yelp"><i class="fa fa-fw fa-yelp"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+            <!-- jQuery -->
+        <script src="@routes.Assets.versioned("javascripts/jquery.js")"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+
+            <!-- Plugin JavaScript -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="@routes.Assets.versioned("javascripts/classie.js")"></script>
+        <script src="@routes.Assets.versioned("javascripts/cbpAnimatedHeader.js")"></script>
+
+            <!-- Custom Theme JavaScript -->
+        <script src="@routes.Assets.versioned("javascripts/pager.js")"></script>
+
+    </body>
+
+</html>

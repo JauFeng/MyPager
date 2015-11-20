@@ -1,0 +1,40 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                              @controllers.Application.index
+
+# Services page
+GET        /services                      @controllers.Application.service
+
+# Doctors page
+GET        /doctors                       @controllers.Application.doctors
+
+# Pricing page
+GET        /pricing                       @controllers.Application.pricing
+
+# For_Business page
+GET        /for-business                  @controllers.Application.forBusiness
+
+# Health_Check_Screening page
+GET        /health-check-screening        @controllers.Application.healthCheckScreening
+
+# Term page
+GET        /term                          @controllers.Application.term
+
+# Privacy page
+GET        /privacy                       @controllers.Application.privacy
+
+# About page
+GET        /about                         @controllers.Application.about
+
+# Spport page
+GET        /support                       @controllers.Application.support
+
+# Login page
+
+GET        /login                         @controllers.Application.login
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file                  @controllers.Assets.versioned(path="/public", file: Asset)
